@@ -1,0 +1,30 @@
+{
+  "known_reported_usd": 0.053136544560000006,
+  "runs": {
+    "dev-agent": {
+      "chat_usd": 0.00480812024,
+      "embedding_usd": 0.0
+    },
+    "dev-final": {
+      "chat_usd": 0.03920588144000001,
+      "embedding_usd": 3.4e-06
+    },
+    "dev-retrieval": {
+      "chat_usd": 0,
+      "embedding_usd": 9.5e-07
+    },
+    "test-final": {
+      "chat_usd": 0.008345378,
+      "embedding_usd": 4.6599999999999994e-06
+    },
+    "ask-20261114T092314374941Z": {
+      "chat_usd": 0.0005394088800000001,
+      "embedding_usd": 0.0
+    },
+    "ask-20261114T095436533053Z": {
+      "chat_usd": 0.000228746,
+      "embedding_usd": 0.0
+    }
+  },
+  "limitation": "Chỉ cộng cost provider trả về trong trace đã lưu; lượt đang gọi khi bị dừng có thể chưa có trace. Có dùng cache Day 6."
+}

@@ -1,0 +1,77 @@
+{
+  "identity": {
+    "namespace": "1a38c6b30f28f685e6bccebcc41b4db551e539805f67df1e07a78b6af274ff9f",
+    "strategy": "A",
+    "embedding": {
+      "provider": "openrouter",
+      "model": "qwen/qwen3-embedding-8b",
+      "requested_dimensions": null,
+      "query_instruction": "Given a question, retrieve relevant passages from scientific papers.",
+      "document_prefix": "",
+      "encoding_format": "float"
+    },
+    "dimensions": 4096,
+    "agent_model": "deepseek/deepseek-v4.1-flash-1017",
+    "code_sha256": "b8049c27c665c59a25752954e7b5d8cc4981a9df347d379d5fc448dcbc5e0e9b",
+    "benchmark_sha256": "214a6fa1e07d6fe75fefcd40f60ffd1c71180add6311b0e17075ad3ae4af1330",
+    "configs_sha256": "f7685352ea3f828c504eae8162a4ae1bc48b511b774ed651071369863970b4b2",
+    "chunks_sha256": "72e94fde236f5f967d4a8f927c2e80dc06f2f03cc2bc9f8472dca237e3afd145"
+  },
+  "split": "dev",
+  "configs": [
+    "baseline",
+    "lexical",
+    "hybrid",
+    "hybrid_context",
+    "hybrid_multiturn"
+  ],
+  "retrieval_only": true,
+  "configurations": {
+    "baseline": {
+      "method": "dense",
+      "top_k": 3,
+      "candidate_k": 20,
+      "budget": 4000,
+      "max_searches": 1,
+      "recent_first": false,
+      "hypothesis": "Dense dùng query gốc trên snapshot A–1000 làm mốc."
+    },
+    "lexical": {
+      "method": "tfidf",
+      "top_k": 3,
+      "candidate_k": 20,
+      "budget": 4000,
+      "max_searches": 1,
+      "recent_first": false,
+      "hypothesis": "Từ khóa giữ được thuật ngữ chính xác nhưng có thể yếu khi hỏi tiếng Việt về tài liệu tiếng Anh."
+    },
+    "hybrid": {
+      "method": "hybrid",
+      "top_k": 3,
+      "candidate_k": 20,
+      "budget": 4000,
+      "max_searches": 1,
+      "recent_first": false,
+      "hypothesis": "RRF kết hợp dense và TF-IDF để bổ sung các ứng viên bị bỏ sót."
+    },
+    "hybrid_context": {
+      "method": "hybrid",
+      "top_k": 6,
+      "candidate_k": 30,
+      "budget": 7500,
+      "max_searches": 1,
+      "recent_first": false,
+      "hypothesis": "Thêm ứng viên và context giúp giữ đủ bằng chứng ngoài top 3; đổi lại tốn thêm token."
+    },
+    "hybrid_multiturn": {
+      "method": "hybrid",
+      "top_k": 6,
+      "candidate_k": 30,
+      "budget": 7500,
+      "max_searches": 3,
+      "recent_first": true,
+      "hypothesis": "Model tìm lại bằng query phù hợp khi còn thiếu bằng chứng; ưu tiên kết quả mới và đo thêm thời gian/chi phí."
+    }
+  },
+  "selection_criteria": "answer_grade/2 + correct_abstention over all cases desc; context evidence desc; errors asc; median_ms asc; name asc"
+}

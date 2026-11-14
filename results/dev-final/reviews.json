@@ -1,0 +1,1032 @@
+[
+  {
+    "config": "baseline",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ S/N/R; đối chiếu trang 1 và kết luận trang 9, hai nguồn hỗ trợ câu trả lời.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Trả lời đúng GCE-MIL là wrapper bổ sung lên backbone, giữ nguyên kiến trúc; các đoạn trích hỗ trợ nội dung này.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng embedding patch 1024 chiều; đối chiếu phát biểu d=1024 và thông tin UNI trong các đoạn nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng text embedding được tính một lần rồi giữ cố định; nêu đủ adapter, bridge, selector và tham số host MIL được học.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context trang 6 đủ 1.0→0.4 và mục đích; model đưa ID trong citations nhưng quên [ID] trong văn bản, nên câu trả lời cuối bị từ chối và chấm 0.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối dù câu có đáp án. Context chỉ có so sánh cùng budget 5%, thiếu đoạn xác nhận budget benchmark chính và cách chọn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ λb=0.1, λg=0.5, chọn trên BRACS validation folds rồi giữ cố định qua dataset và backbone; context có bằng chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q08",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối vì thiếu cách đánh giá faithfulness. Context chỉ có mảnh cuối câu phủ nhận tối ưu toàn cục, chưa đủ cả câu hỏi.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Nêu đúng Proposition 4: với model class cố định, không tiêu chí S/N/R nào suy ra một trong hai tiêu chí còn lại nói chung. Context có Proposition 4 và giải thích liên quan.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q10",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối: các đoạn giới thiệu không giải thích bão hòa hoặc marginal gain giảm khi thêm patch dư thừa.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ ∧=AND, ∨=OR, ¬=NOT; ví dụ query và hàm tập đều nằm trong chunk trang 3.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng alignment với logical rule; hai đoạn trang 2 hỗ trợ bằng chứng tương đương dù gold tự động trỏ trang 5.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ encoder tích chập hai lớp, huấn luyện jointly với TransMIL từ random initialization và test performance 99.99%.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng R là mọi chữ số ngoài 4 và 7; danh sách 0,1,2,3,5,6,8,9 nếu có là tương đương định nghĩa trong nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 21/25 ca, 84%, decision threshold 0.5 và điều kiện chuyển Normal patch từ C3 vào slide normal đối chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối con số độ trễ trên CPU Intel Core i5-12400; không bịa số mili giây. Các số tương đối nêu thêm đã được đối chiếu với nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "baseline",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối chi phí AWS us-east-1 theo tháng; không đưa số USD suy đoán.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Nêu đủ Sufficiency, Necessity và Recoverability. Các đoạn được truy xuất nêu trực tiếp ba tiêu chí S/N/R.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đúng wrapper và các kiểu tiêm gate: attention-logit bias, feature reweighting, hybrid; đối chiếu trang 3 và 5.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng embedding patch 1024 chiều; đối chiếu phát biểu d=1024 và thông tin UNI trong các đoạn nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng text embedding được tính một lần rồi giữ cố định; nêu đủ adapter, bridge, selector và tham số host MIL được học.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ nhiệt độ 1.0 xuống 0.4, mục đích bimodal/discrete-like và thuận lợi recovery khi inference; các đoạn nguồn hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối vì chưa có dữ liệu/cách chọn. Context trang 22 có ρ=0.05 và budget sweep nhưng chưa xác nhận validation.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q07",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng hai trọng số và giữ cố định qua dataset, nhưng thiếu điều kiện chọn trên BRACS validation folds trong cả câu trả lời lẫn context; chấm 1.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      false
+    ],
+    "reason": "Trả lời đủ giới hạn lý thuyết và hai cách kiểm tra faithfulness. Citation 37edf21d chỉ là đuôi câu, chưa đủ ngữ cảnh để tự hỗ trợ khẳng định; hai nguồn còn lại hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Nêu đúng Proposition 4: với model class cố định, không tiêu chí S/N/R nào suy ra một trong hai tiêu chí còn lại nói chung. Context có Proposition 4 và giải thích liên quan.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng bão hòa, marginal gain thấp và bằng chứng bổ sung. Chunk trang 16 đủ nghĩa dù mất dấu chấm cuối excerpt gold.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ ba toán tử; chunk hình trang 4 vẫn ghi rõ NOT/OR/AND, chunk trang 6 có ví dụ ¬4∧7∧R.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng mỗi chiều là alignment với rule trong Q; chunk mục 3.3 trang 5 hỗ trợ công thức và diễn giải.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ encoder tích chập hai lớp, huấn luyện jointly với TransMIL từ random initialization và test performance 99.99%.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng R là mọi chữ số ngoài 4 và 7; danh sách 0,1,2,3,5,6,8,9 nếu có là tương đương định nghĩa trong nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 21/25 ca, 84%, decision threshold 0.5 và điều kiện chuyển Normal patch từ C3 vào slide normal đối chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối con số độ trễ trên CPU Intel Core i5-12400; không bịa số mili giây. Các số tương đối nêu thêm đã được đối chiếu với nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "lexical",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối chi phí AWS us-east-1 theo tháng; không đưa số USD suy đoán.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Nêu đủ Sufficiency, Necessity và Recoverability. Các đoạn được truy xuất nêu trực tiếp ba tiêu chí S/N/R.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Trả lời đúng GCE-MIL là wrapper bổ sung lên backbone, giữ nguyên kiến trúc; các đoạn trích hỗ trợ nội dung này.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng embedding patch 1024 chiều; đối chiếu phát biểu d=1024 và thông tin UNI trong các đoạn nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng text embedding được tính một lần rồi giữ cố định; nêu đủ adapter, bridge, selector và tham số host MIL được học.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ nhiệt độ 1.0 xuống 0.4, mục đích bimodal/discrete-like và thuận lợi recovery khi inference; các đoạn nguồn hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối vì context chỉ có so sánh cùng budget, chưa đủ mức budget benchmark chính và cách chọn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q07",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng trọng số và giữ cố định nhưng thiếu BRACS validation folds; context chưa lấy được đoạn xác nhận này, chấm 1.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ phạm vi coverage, không khẳng định global classifier optimality; faithfulness được kiểm tra bằng keep/remove và CAMELYON-16 với pixel annotations.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      false
+    ],
+    "reason": "Đúng độc lập logic, context trang 15 và 17 hỗ trợ đầy đủ. Citation trang 15 bị cắt đuôi điều kiện của ví dụ cuối nên nhãn citation đó là false.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q10",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối vì chưa có cơ chế bão hòa/marginal gain, chỉ có các đoạn giới thiệu.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q11",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối do context thiếu định nghĩa NOT/AND/OR, chỉ có ví dụ query và mô tả pipeline.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Diễn giải đúng mỗi chiều biểu diễn alignment với một logical rule. Các đoạn giới thiệu/caption trong context là bằng chứng tương đương ngoài gold trang 5.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ encoder tích chập hai lớp, huấn luyện jointly với TransMIL từ random initialization và test performance 99.99%.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng R là mọi chữ số ngoài 4 và 7; danh sách 0,1,2,3,5,6,8,9 nếu có là tương đương định nghĩa trong nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 21/25 ca, 84%, decision threshold 0.5 và điều kiện chuyển Normal patch từ C3 vào slide normal đối chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối con số độ trễ trên CPU Intel Core i5-12400; không bịa số mili giây. Các số tương đối nêu thêm đã được đối chiếu với nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối chi phí AWS us-east-1 theo tháng; không đưa số USD suy đoán.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context đủ nhưng model ghép nhiều ID trong [ID; ID], không theo định dạng [ID] riêng, nên bị từ chối và chấm 0.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Trả lời đúng GCE-MIL là wrapper bổ sung lên backbone, giữ nguyên kiến trúc; các đoạn trích hỗ trợ nội dung này.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng embedding patch 1024 chiều; đối chiếu phát biểu d=1024 và thông tin UNI trong các đoạn nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đúng text embedding được tính một lần rồi giữ cố định; nêu đủ adapter, bridge, selector và tham số host MIL được học.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ nhiệt độ 1.0 xuống 0.4, mục đích bimodal/discrete-like và thuận lợi recovery khi inference; các đoạn nguồn hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "Từ chối phần dữ liệu chọn budget dù có ρ=0.05 và Table 16; context chưa có đoạn xác nhận validation.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context đủ trọng số và BRACS validation folds, nhưng model ghép [ID; ID] khiến citation không hợp lệ; câu trả lời cuối bị từ chối và chấm 0.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ giới hạn lý thuyết và hai cách kiểm tra. Chunk trang 15 hỗ trợ; mảnh trang 6 chỉ được trích nguyên văn, không coi nó tự chứng minh phủ nhận tối ưu toàn cục.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng độc lập logic; chunk trang 16 bổ sung trường hợp gate gần threshold, các nguồn hỗ trợ lập luận.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng diminishing returns, công thức coverage/marginal và khác mean/attention; chunk trang 6 hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reason": "Nêu đúng ∧=AND, ∨=OR, ¬=NOT; đối chiếu định nghĩa hoặc nhãn toán tử trong các đoạn được truy xuất.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Diễn giải đúng mỗi chiều biểu diễn alignment với một logical rule. Các đoạn giới thiệu/caption trong context là bằng chứng tương đương ngoài gold trang 5.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ encoder tích chập hai lớp, huấn luyện jointly với TransMIL từ random initialization và test performance 99.99%.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng R là mọi chữ số ngoài 4 và 7; danh sách 0,1,2,3,5,6,8,9 nếu có là tương đương định nghĩa trong nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 21/25 ca, 84%, decision threshold 0.5 và điều kiện chuyển Normal patch từ C3 vào slide normal đối chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Có từ chối nhưng thêm số sai: cached features có end-to-end 0.92×, không phải 0.18×; 0.18× là peak memory trong Table 23. Không đạt yêu cầu tránh khẳng định vô căn cứ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": false
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối chi phí AWS us-east-1 theo tháng; không đưa số USD suy đoán.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      false
+    ],
+    "reason": "Đúng ba tiêu chí S/N/R. Citation d972ee86 chỉ còn đuôi định nghĩa Recoverability nên chưa tự hỗ trợ đủ phần diễn giải thêm về cả ba định nghĩa.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Trả lời đúng GCE-MIL là wrapper bổ sung lên backbone, giữ nguyên kiến trúc; các đoạn trích hỗ trợ nội dung này.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng embedding patch 1024 chiều; đối chiếu phát biểu d=1024 và thông tin UNI trong các đoạn nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đúng text embedding được tính một lần rồi giữ cố định; nêu đủ adapter, bridge, selector và tham số host MIL được học.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đủ nhiệt độ 1.0 xuống 0.4, mục đích bimodal/discrete-like và thuận lợi recovery khi inference; các đoạn nguồn hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Tìm lại lấy được ρ=0.05, Table 16 trên BRACS và các số đúng; chưa nói rõ validation sweep như đáp án, context chưa có đoạn xác nhận ở trang 7. Chấm 1, không coi đã giải quyết hoàn toàn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đủ λb=0.1, λg=0.5, chọn trên BRACS validation folds rồi giữ cố định qua dataset và backbone; context có bằng chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "reason": "Đủ phạm vi coverage và keep/remove plus CAMELYON-16. Nguồn trang 15,17,20 hỗ trợ; mảnh 37edf21d thiếu ngữ cảnh để tự chứng minh phủ nhận tối ưu toàn cục.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Đúng độc lập logic; đọc đủ ví dụ ở chunk tiếp nối trang 15 và 16, không suy từ phần bị cắt.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "Tìm lại lấy được công thức marginal, bão hòa và curvature; ba chunk trang 6,16 hỗ trợ cơ chế ưu tiên bằng chứng bổ sung.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Tìm lại lấy được định nghĩa AND/OR/NOT; nguồn trang 3 và ví dụ trang 7 hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Diễn giải đúng mỗi chiều biểu diễn alignment với một logical rule. Các đoạn giới thiệu/caption trong context là bằng chứng tương đương ngoài gold trang 5.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ encoder tích chập hai lớp, huấn luyện jointly với TransMIL từ random initialization và test performance 99.99%.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng R là mọi chữ số ngoài 4 và 7; danh sách 0,1,2,3,5,6,8,9 nếu có là tương đương định nghĩa trong nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ 21/25 ca, 84%, decision threshold 0.5 và điều kiện chuyển Normal patch từ C3 vào slide normal đối chứng.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối con số độ trễ trên CPU Intel Core i5-12400; không bịa số mili giây. Các số tương đối nêu thêm đã được đối chiếu với nguồn.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Tìm ba lượt rồi từ chối USD/tháng. Chi tiết hardware có nguồn GCE-MIL; cách diễn đạt nên chỉ rõ paper thay vì nói chung.",
+    "reviewer": "Codex: đọc câu trả lời, context và đoạn nguồn; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  }
+]

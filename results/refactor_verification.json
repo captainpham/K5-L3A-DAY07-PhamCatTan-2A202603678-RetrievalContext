@@ -1,0 +1,37 @@
+{
+  "type": "offline_regression_not_a_new_benchmark",
+  "previous_code_sha256": "e96a1d270bda0dc3324f2d470445e4ca22b530ec905c8bca6b6a78d2d95b6de8",
+  "current_code_sha256": "baf85bb60f7b30ac2473796eb83090b818751d20108b18ce2216f99f0f63b279",
+  "runtime_entry": "starter/agentic.py",
+  "implemented_existing_methods": [
+    "Controller.decide",
+    "Retriever.search",
+    "run_agent"
+  ],
+  "removed_duplicate_modules": [
+    "src/agent.py",
+    "src/controller.py",
+    "src/retrieval.py",
+    "src/evaluation.py"
+  ],
+  "original_guidance_docstrings_preserved": true,
+  "saved_model_traces_replayed": 99,
+  "postgres_rankings_matched": 99,
+  "reviewed_summaries_matched": 7,
+  "embedding_api_requests_for_regression": 0,
+  "comparison": "Model messages, query, filter, ranking, context, answer, citations and status unchanged; elapsed time excluded.",
+  "historical_results": "Original benchmark and selection files retain their original code hashes. Replay is not a new independent test run.",
+  "review_text_repair": {
+    "original_dev_reviews_sha256": "663e1bb50308b67a21027148cad59389c6e279c547c4e41e779a0caf177f6207",
+    "corrected_dev_reviews_sha256": "e53bd67415e6965145d48cdc5c4c4533f16f3913c578084d1361238bad6adb55",
+    "original_copy": "results/dev-final/reviews_original_encoding.json",
+    "changed": "Chỉ sửa reason/reviewer bị lỗi dấu tiếng Việt; giữ nguyên toàn bộ nhãn số và boolean.",
+    "historical_selection": "reviews_sha256 trong selection cũ khớp bản reviews_original_encoding.json được giữ lại."
+  },
+  "unit_tests_passed": 24,
+  "live_starter_check": {
+    "command": "python starter/agentic.py ask <dev question> --config baseline",
+    "status": "answered",
+    "trace": "results/ask-20261114T095436533053Z.json"
+  }
+}
