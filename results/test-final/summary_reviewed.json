@@ -1,0 +1,145 @@
+{
+  "baseline": {
+    "retrieval": {
+      "hit1": {
+        "n": 3,
+        "N": 5,
+        "rate": 0.6
+      },
+      "hit3": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      },
+      "context_evidence": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      }
+    },
+    "total_cases": 7,
+    "errors": 0,
+    "median_ms": 4210.751800012076,
+    "search_call_distribution": {
+      "1": 7
+    },
+    "agent": {
+      "cases": 7,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 0,
+        "1": 0,
+        "2": 5,
+        "N": 5,
+        "mean": 2.0
+      },
+      "citation_validity": {
+        "n": 6,
+        "N": 6
+      },
+      "answer_citation_coverage": {
+        "n": 5,
+        "N": 5
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 5
+      }
+    },
+    "selection_quality": 1.0,
+    "context_review": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "chat_cost_usd_reported": 0.003142384,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 7,
+      "cache_hits": 7,
+      "prompt_tokens": 343,
+      "reported_cost_usd": 3.4299999999999998e-06,
+      "responses_without_cost": 0
+    }
+  },
+  "hybrid_multiturn": {
+    "retrieval": {
+      "hit1": {
+        "n": 3,
+        "N": 5,
+        "rate": 0.6
+      },
+      "hit3": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      },
+      "context_evidence": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      }
+    },
+    "total_cases": 7,
+    "errors": 0,
+    "median_ms": 2997.583999997005,
+    "search_call_distribution": {
+      "1": 5,
+      "3": 2
+    },
+    "agent": {
+      "cases": 7,
+      "provider_errors": 0,
+      "tool_use": {
+        "n": 7,
+        "N": 7
+      },
+      "grounded_answer": {
+        "0": 1,
+        "1": 0,
+        "2": 4,
+        "N": 5,
+        "mean": 1.6
+      },
+      "citation_validity": {
+        "n": 4,
+        "N": 4
+      },
+      "answer_citation_coverage": {
+        "n": 4,
+        "N": 4
+      },
+      "abstention": {
+        "n": 2,
+        "N": 2
+      },
+      "false_abstention": {
+        "n": 1,
+        "N": 5
+      }
+    },
+    "selection_quality": 0.8571428571428571,
+    "context_review": {
+      "0": 0,
+      "1": 0,
+      "2": 5
+    },
+    "chat_cost_usd_reported": 0.005202994,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 4,
+      "cache_hits": 14,
+      "prompt_tokens": 123,
+      "reported_cost_usd": 1.23e-06,
+      "responses_without_cost": 0
+    }
+  }
+}

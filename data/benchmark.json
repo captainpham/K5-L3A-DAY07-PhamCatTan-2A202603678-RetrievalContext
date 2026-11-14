@@ -1,0 +1,399 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "GCE-MIL đề xuất ba tiêu chí nào để tối ưu trực tiếp chất lượng bằng chứng?",
+    "answerable": true,
+    "expected_answer": "Sufficiency, Necessity và Recoverability (S/N/R).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 1,
+        "evidence": "The central premise is that evidence quality should\nbe optimized directly through explicit criteria—Sufficiency, Necessity, and Recov-\nerability (S/N/R)—rather than inherited as a byproduct of classification."
+      },
+      {
+        "source_id": "2605.17456v1",
+        "page": 3,
+        "evidence": "A formalization of MIL evidence quality through Sufficiency, Necessity, and Recoverability"
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "Trong phần nội dung chính, GCE-MIL thay thế backbone MIL hay bổ sung lên backbone hiện có?",
+    "answerable": true,
+    "expected_answer": "Là wrapper bổ sung; kiến trúc MIL gốc giữ nguyên. Evidence gate được đưa vào bằng attention-logit bias, feature reweighting hoặc hybrid theo kiểu aggregation.",
+    "filter": {
+      "section_group": "main"
+    },
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 3,
+        "evidence": "It is a wrapper rather than a replacement backbone: the host MIL architecture remains\nunchanged, and the evidence gate is injected as attention-logit bias, feature reweighting, or a hybrid\naccording to the host aggregation type."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "Trong mô tả biểu diễn patch của GCE-MIL, embedding từ pretrained encoder có số chiều bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "1024 chiều trong toàn bộ thiết lập được mô tả.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 3,
+        "evidence": "A pretrained encoder maps each patch xi to a fixed-dimensional embedding\nhi ∈R d (d= 1024 throughout)."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "Trong GCE-MIL, text embedding của anchor có được cập nhật trong quá trình huấn luyện không? Những thành phần nào được học?",
+    "answerable": true,
+    "expected_answer": "Text embedding được tính một lần và cố định; adapter, bridge, selector và tham số host MIL được học.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 6,
+        "evidence": "The text embeddings are computed once and fixed during training, and only the\nadapter, bridge, selector, and host MIL parameters are learned."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "Nhiệt độ của continuous selector trong GCE-MIL được anneal từ giá trị nào đến giá trị nào và nhằm mục đích gì?",
+    "answerable": true,
+    "expected_answer": "Từ 1.0 xuống 0.4; làm gate có xu hướng gần rời rạc hơn để thuận lợi khôi phục tập bằng chứng khi inference.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 6,
+        "evidence": "where νx = 0 is a centering constant and T is a temperature that is annealed from 1.0 to 0.4 during\ntraining. This annealing gradually pushes the gate distribution toward a bimodal regime (Figure 1,\nmiddle panel), making the continuous selector increasingly discrete-like and facilitating recovery at\ninference time."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "Evidence budget dùng trong benchmark chính của GCE-MIL là bao nhiêu và được chọn trên dữ liệu nào?",
+    "answerable": true,
+    "expected_answer": "ρ = 0.05, được chọn bằng validation sweep trong Appendix Table 16; budget lớn hơn chỉ là các điểm phân tích độ nhạy.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 7,
+        "evidence": "The reported benchmark uses the operating\nevidence budget ρ= 0.05 , selected by the validation sweep in Appendix Table 16; larger budgets are\nreported as sensitivity points rather than mixed into the main tables."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "Hai trọng số loss budget và grounding của GCE-MIL là bao nhiêu, được chọn và giữ cố định như thế nào?",
+    "answerable": true,
+    "expected_answer": "λb = 0.1 và λg = 0.5; chọn trên BRACS validation folds rồi giữ cố định giữa các dataset và backbone.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 7,
+        "evidence": "The weights λb = 0.1 and λg = 0.5 define the reported cross-dataset setting\nand are kept fixed across datasets and backbones after selection on BRACS validation folds."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "Lý thuyết trong phụ lục GCE-MIL có khẳng định classifier tối ưu toàn cục không, và faithfulness ở cấp classifier được kiểm tra thế nào?",
+    "answerable": true,
+    "expected_answer": "Không. Lý thuyết là các phát biểu ở cấp coverage của noisy-OR utility; classifier faithfulness được đánh giá thực nghiệm bằng keep/remove interventions và localization CAMELYON-16 với annotation mức pixel.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 15,
+        "evidence": "The results in this appendix are coverage-level statements about the noisy-\nOR utility, not claims of global classifier optimality. Submodularity justifies the marginal-gain\nrecovery objective under fixed anchor responses, while the conditional interventional bound\nexplains when uncovered anchor mass can upper-bound omitted representation contribution.\nClassifier-level faithfulness is therefore evaluated empirically through keep/remove interventions\nand, separately, through CAMELYON-16 localization against pixel-level annotations."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "question": "Chỉ xét phần phụ lục: Proposition 4 của GCE-MIL nói gì về quan hệ suy ra giữa Sufficiency, Necessity và Recoverability?",
+    "answerable": true,
+    "expected_answer": "Ba tiêu chí độc lập logic: nói chung, không tiêu chí nào kéo theo một trong hai tiêu chí còn lại với một model class cố định.",
+    "filter": {
+      "section_group": "appendix"
+    },
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 15,
+        "evidence": "Proposition 4(S/N/R are logically independent).For a fixed model class, none of Sufficiency,\nNecessity, and Recoverability implies either of the other two in general."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "question": "Vì sao noisy-OR trong GCE-MIL ưu tiên bằng chứng bổ sung thay vì thêm các patch dư thừa?",
+    "answerable": true,
+    "expected_answer": "Noisy-OR bão hòa khi một concept đã được bao phủ; thêm patch dư thừa tạo marginal gain thấp hơn, nên greedy recovery thiên về bằng chứng bổ sung.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 16,
+        "evidence": "This saturation behavior is important for Necessity: once an anchor\nis covered, adding another redundant patch has lower marginal gain, so greedy recovery is biased\ntoward complementary evidence."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "Symbolic XAI dùng những toán tử logic cơ bản nào để xây query và ý nghĩa của chúng là gì?",
+    "answerable": true,
+    "expected_answer": "∧ là AND, ∨ là OR và ¬ là NOT.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 3,
+        "evidence": "The framework further introduces the notion ofqueries, which are relationships constructed by\ncombining feature identifiersI, J∈ Nwith logical connectives such as∧,∨, and¬, representing\nAND, OR, and NOT, respectively."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "Chỉ xét nội dung chính: trong symbolic representation space của Symb-xMIL, mỗi chiều của vector biểu diễn điều gì?",
+    "answerable": true,
+    "expected_answer": "Mỗi chiều là mức alignment giữa hành vi mô hình và một logical rule cụ thể trong tập query Q.",
+    "filter": {
+      "section_group": "main"
+    },
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 5,
+        "evidence": "In this space, each dimension corresponds\nto alignment with a specific logical rule inQ."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "Trong thí nghiệm MIL mô phỏng của Symb-xMIL, encoder và mô hình aggregation được huấn luyện thế nào, đạt test performance bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "Encoder convolution hai lớp được huấn luyện đồng thời với TransMIL từ khởi tạo ngẫu nhiên; các model đạt test performance 99.99%.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 6,
+        "evidence": "We used a two-layer convolutional encoder trained jointly with TransMIL [45]\nfrom random initialization. All models achieved near-perfect test performance (99.99%), confirming\nthat the simulated interaction patterns were learned by the corresponding model."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "Trong semantic map của thí nghiệm MNIST thuộc Symb-xMIL, nhóm R gồm những chữ số nào?",
+    "answerable": true,
+    "expected_answer": "R là tất cả chữ số còn lại ngoài 4 và 7.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 6,
+        "evidence": "Since “4” and “7” were the main digits of our simulations, we grouped bag instances\ninto three semantic features,N={4,7,R}, where “R” stands forrest, i.e., all digits except 4 and 7."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "Khi chuyển các Normal patch từ slide C3 sang slide normal đối chứng trong Symb-xMIL, có bao nhiêu ca đổi dự đoán và tại ngưỡng nào?",
+    "answerable": true,
+    "expected_answer": "21/25 ca, tương đương 84%, đổi dự đoán tại decision threshold 0.5.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 8,
+        "evidence": "we performed a counterfactual patch-\ntransfer experiment, inserting Normal patches from C3 slides into matched ground-truth normal\nslides while controlling for acquisition-related confounders. If these patches carry no such signal,\nthe recipient slides should remain classified as normal. However, the counterfactual intervention\nflipped 21/25 cases at a 0.5 decision threshold (84%)."
+      }
+    ],
+    "provenance": "Day 6 dev; không dùng lại test Day 6."
+  },
+  {
+    "id": "T01",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong phần P1 của GCE-MIL, giữ lại attention top-k làm Macro-F1 giảm bao nhiêu so với full bag, và con số đó được lấy trung bình trên phạm vi nào?",
+    "expected_answer": "Giảm 0.078 Macro-F1, trung bình trên 9 dataset và 9 backbone.",
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 4,
+        "evidence": "Table 4 shows this fails: keeping attention top-k drops Macro-F1 by\n0.078from the full bag, averaged across nine datasets and nine backbones."
+      }
+    ],
+    "filter": null,
+    "provenance": "Câu mới Day 7, cố định trước chạy dev/test."
+  },
+  {
+    "id": "T02",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong công thức patch-anchor response của GCE-MIL, gamma và delta có giá trị nào và mỗi tham số có tác dụng gì?",
+    "expected_answer": "Gamma = 8.0 làm sắc response; delta = 0.15 loại bớt các khớp yếu.",
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 6,
+        "evidence": "where am is the frozen anchor embedding, γ= 8.0 sharpens the response, and δ= 0.15 suppresses\nweak matches."
+      }
+    ],
+    "filter": null,
+    "provenance": "Câu mới Day 7, cố định trước chạy dev/test."
+  },
+  {
+    "id": "T03",
+    "split": "test",
+    "answerable": true,
+    "question": "Theo phần Main Classification Results của GCE-MIL, trên BRACS, Macro-F1 của ABMIL tăng từ bao nhiêu lên bao nhiêu khi thêm GCE?",
+    "expected_answer": "Từ 0.634 lên 0.703, tăng 6.9 điểm phần trăm.",
+    "gold": [
+      {
+        "source_id": "2605.17456v1",
+        "page": 8,
+        "evidence": "On BRACS, ABMIL improves from 0.634 to 0.703\nMacro-F1 (+6.9 points)"
+      }
+    ],
+    "filter": null,
+    "provenance": "Câu mới Day 7, cố định trước chạy dev/test."
+  },
+  {
+    "id": "T04",
+    "split": "test",
+    "answerable": true,
+    "question": "Trong phân tích symbolic representation space của Symb-xMIL trên các tumor sample, K-means dùng K bao nhiêu và silhouette bằng bao nhiêu?",
+    "expected_answer": "K = 4 và silhouette = 0.44.",
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 7,
+        "evidence": "we appliedK-means clustering (K= 4;\nsilhouette = 0.44)"
+      }
+    ],
+    "filter": null,
+    "provenance": "Câu mới Day 7, cố định trước chạy dev/test."
+  },
+  {
+    "id": "T05",
+    "split": "test",
+    "answerable": true,
+    "question": "Ở mục 3.2, Symb-xMIL thay đổi việc so sánh với logical query như thế nào so với cách dùng Harsanyi dividends?",
+    "expected_answer": "So sánh trực tiếp prediction f(x_S) với lambda_q(S), không áp dụng phép biến đổi Harsanyi dividends.",
+    "gold": [
+      {
+        "source_id": "2606.06224v2",
+        "page": 4,
+        "evidence": "We therefore propose a modification\nthat directly compares the model’s predictionf(x S )withλ q(S), without applying this transforma-\ntion."
+      }
+    ],
+    "filter": null,
+    "provenance": "Câu mới Day 7, cố định trước chạy dev/test."
+  },
+  {
+    "id": "D16",
+    "split": "dev",
+    "question": "GCE-MIL có độ trễ suy luận trung vị bao nhiêu mili giây trên CPU Intel Core i5-12400?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không có benchmark độ trễ trên CPU Intel Core i5-12400 trong corpus.",
+    "absence_check": {
+      "scope": "Toàn bộ 31 trang text trong corpus",
+      "searched_terms": [
+        "i5-12400"
+      ],
+      "occurrences": [],
+      "review": "Đối chiếu phạm vi thông tin được hỏi; không suy từ top-k rỗng."
+    }
+  },
+  {
+    "id": "D17",
+    "split": "dev",
+    "question": "Triển khai Symb-xMIL trên AWS us-east-1 tốn bao nhiêu USD mỗi tháng theo paper?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Paper không báo giá triển khai AWS us-east-1 theo tháng.",
+    "absence_check": {
+      "scope": "Toàn bộ 31 trang text trong corpus",
+      "searched_terms": [
+        "us-east-1"
+      ],
+      "occurrences": [],
+      "review": "Đối chiếu phạm vi thông tin được hỏi; không suy từ top-k rỗng."
+    }
+  },
+  {
+    "id": "T06",
+    "split": "test",
+    "question": "Theo paper, mã hồ sơ đăng ký thử nghiệm lâm sàng ClinicalTrials.gov của GCE-MIL là gì?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không có hồ sơ hoặc mã đăng ký ClinicalTrials.gov trong corpus.",
+    "absence_check": {
+      "scope": "Toàn bộ 31 trang text trong corpus",
+      "searched_terms": [
+        "clinicaltrials.gov",
+        "NCT0"
+      ],
+      "occurrences": [],
+      "review": "Đối chiếu phạm vi thông tin được hỏi; không suy từ top-k rỗng."
+    }
+  },
+  {
+    "id": "T07",
+    "split": "test",
+    "question": "Theo paper Symb-xMIL, huấn luyện mô hình tiêu thụ bao nhiêu kWh điện?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không báo điện năng huấn luyện theo kWh trong corpus.",
+    "absence_check": {
+      "scope": "Toàn bộ 31 trang text trong corpus",
+      "searched_terms": [
+        "kwh",
+        "kilowatt"
+      ],
+      "occurrences": [],
+      "review": "Đối chiếu phạm vi thông tin được hỏi; không suy từ top-k rỗng."
+    }
+  }
+]

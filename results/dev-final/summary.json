@@ -1,0 +1,174 @@
+{
+  "baseline": {
+    "retrieval": {
+      "hit1": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "hit3": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      },
+      "context_evidence": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      }
+    },
+    "total_cases": 17,
+    "errors": 0,
+    "median_ms": 3156.5637000021525,
+    "search_call_distribution": {
+      "1": 17
+    },
+    "chat_cost_usd_reported": 0.006228948,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 0,
+      "cache_hits": 34,
+      "prompt_tokens": 0,
+      "reported_cost_usd": 0.0,
+      "responses_without_cost": 0
+    }
+  },
+  "lexical": {
+    "retrieval": {
+      "hit1": {
+        "n": 4,
+        "N": 15,
+        "rate": 0.26666666666666666
+      },
+      "hit3": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "context_evidence": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      }
+    },
+    "total_cases": 17,
+    "errors": 0,
+    "median_ms": 3243.313399987528,
+    "search_call_distribution": {
+      "1": 17
+    },
+    "chat_cost_usd_reported": 0.007329614,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 0,
+      "cache_hits": 0,
+      "prompt_tokens": 0,
+      "reported_cost_usd": 0.0,
+      "responses_without_cost": 0
+    }
+  },
+  "hybrid": {
+    "retrieval": {
+      "hit1": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "hit3": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      },
+      "context_evidence": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      }
+    },
+    "total_cases": 17,
+    "errors": 0,
+    "median_ms": 3116.388599999482,
+    "search_call_distribution": {
+      "1": 17
+    },
+    "chat_cost_usd_reported": 0.00626281824,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 0,
+      "cache_hits": 34,
+      "prompt_tokens": 0,
+      "reported_cost_usd": 0.0,
+      "responses_without_cost": 0
+    }
+  },
+  "hybrid_context": {
+    "retrieval": {
+      "hit1": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "hit3": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      },
+      "context_evidence": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      }
+    },
+    "total_cases": 17,
+    "errors": 0,
+    "median_ms": 3358.777599991299,
+    "search_call_distribution": {
+      "1": 17
+    },
+    "chat_cost_usd_reported": 0.00874828856,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 0,
+      "cache_hits": 34,
+      "prompt_tokens": 0,
+      "reported_cost_usd": 0.0,
+      "responses_without_cost": 0
+    }
+  },
+  "hybrid_multiturn": {
+    "retrieval": {
+      "hit1": {
+        "n": 5,
+        "N": 15,
+        "rate": 0.3333333333333333
+      },
+      "hit3": {
+        "n": 10,
+        "N": 15,
+        "rate": 0.6666666666666666
+      },
+      "context_evidence": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      }
+    },
+    "total_cases": 17,
+    "errors": 0,
+    "median_ms": 4499.373900005594,
+    "search_call_distribution": {
+      "1": 10,
+      "2": 4,
+      "3": 3
+    },
+    "chat_cost_usd_reported": 0.01063621264,
+    "chat_calls_without_cost": 0,
+    "embedding_usage": {
+      "api_requests": 10,
+      "cache_hits": 34,
+      "prompt_tokens": 340,
+      "reported_cost_usd": 3.4e-06,
+      "responses_without_cost": 0
+    }
+  }
+}

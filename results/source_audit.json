@@ -1,0 +1,38 @@
+{
+  "reviewer": "Codex; chưa có người chấm độc lập",
+  "review_date": "2026-11-14",
+  "method": "Render PDF gốc local bằng pypdfium2 và đọc đối chiếu trực quan trang evidence; không sửa benchmark theo kết quả retrieval.",
+  "answerable_test": [
+    {
+      "query_id": "T01",
+      "source_id": "2605.17456v1",
+      "page": 4,
+      "verified": "P1: giảm 0.078, trung bình 9 dataset và 9 backbone."
+    },
+    {
+      "query_id": "T02",
+      "source_id": "2605.17456v1",
+      "page": 6,
+      "verified": "Gamma=8.0 làm sắc response; delta=0.15 loại khớp yếu."
+    },
+    {
+      "query_id": "T03",
+      "source_id": "2605.17456v1",
+      "page": 8,
+      "verified": "ABMIL BRACS: 0.634→0.703, tăng 6.9 điểm."
+    },
+    {
+      "query_id": "T04",
+      "source_id": "2606.06224v2",
+      "page": 7,
+      "verified": "K=4 và silhouette=0.44."
+    },
+    {
+      "query_id": "T05",
+      "source_id": "2606.06224v2",
+      "page": 4,
+      "verified": "So trực tiếp prediction với lambda_q(S), bỏ Harsanyi transform."
+    }
+  ],
+  "unanswerable_scope": "Kiểm tra toàn bộ text 31 trang đã index và phạm vi thông tin được hỏi; không khẳng định đã OCR hoặc đọc mọi hình trong 57 trang PDF."
+}

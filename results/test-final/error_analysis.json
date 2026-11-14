@@ -1,0 +1,21 @@
+{
+  "config_frozen_from": "results/dev-final/selection.json",
+  "baseline": {
+    "full_answers": "5/5",
+    "correct_abstention": "2/2"
+  },
+  "hybrid_multiturn": {
+    "full_answers": "4/5",
+    "correct_abstention": "2/2",
+    "false_abstention": "1/5"
+  },
+  "failure": {
+    "query_id": "T05",
+    "cause": "Model viết tắt citation ID còn 8 ký tự; code yêu cầu ID đầy đủ có trong context.",
+    "retrieval_context_grade": 2,
+    "final_answer_grade": 0
+  },
+  "conclusion": "Cấu hình tốt hơn trên dev chưa tốt hơn baseline trên bộ test nhỏ này. Cần xử lý lỗi citation trong thí nghiệm mới với test độc lập.",
+  "post_test_changes": "Sau test chỉ sắp xếp lại code về starter và kiểm tra hồi quy; không chỉnh prompt, cấu hình, benchmark hoặc lựa chọn theo điểm test.",
+  "review_limitation": "Nhãn do Codex hỗ trợ, chưa có người chấm độc lập; không suy rộng từ 5 câu có đáp án."
+}

@@ -1,0 +1,4 @@
+{
+  "status": "interrupted",
+  "reason": "Lượt thử bị dừng vì kiểm tra citation nhầm E[π] với nguồn trích dẫn. Đã sửa và chạy lại vào results/dev-final; không dùng lượt thử này để chọn cấu hình."
+}

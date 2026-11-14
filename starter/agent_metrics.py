@@ -1,6 +1,9 @@
 """Aggregate agent traces with human labels; never infer grounding from citation IDs."""
 import argparse
 import json
+import re
+import statistics
+import unicodedata
 from pathlib import Path
 
 
@@ -64,6 +67,80 @@ def aggregate(cases, traces, reviews):
     g = out['grounded_answer']
     if g['N']: g['mean'] = (g['1'] + 2*g['2']) / g['N']
     return out
+
+
+
+# Đánh giá retrieval/context dùng cùng trace và các nhãn đã đọc bên trên.
+def canonical(text):
+    return re.sub(r'\s+', ' ', unicodedata.normalize('NFC', text)).strip()
+
+
+def evidence_hit(chunks, gold):
+    # Các phần tử gold là bằng chứng thay thế hợp lệ, không phải đáp án đưa vào agent.
+    return any(c['source_id'] == g['source_id'] and c['page'] == g['page']
+               and canonical(g['evidence']) in canonical(c['text']) for c in chunks for g in gold)
+
+
+def merged_chunks(chunks):
+    """Ghép phần chồng/lân cận cùng trang; không tự điền nội dung nằm trong khoảng trống."""
+    merged = []
+    unique = {c['id']: c for c in chunks}
+    rows = sorted(unique.values(), key=lambda c: (c['source_id'], c['page'], c['metadata']['char_start']))
+    for row in rows:
+        start, end = row['metadata']['char_start'], row['metadata']['char_end']
+        if merged and (merged[-1]['source_id'], merged[-1]['page']) == (row['source_id'], row['page']):
+            previous = merged[-1]
+            if start <= previous['end']:
+                previous['text'] += row['text'][max(0, previous['end'] - start):]
+                previous['end'] = max(previous['end'], end)
+                continue
+        merged.append({**row, 'end': end})
+    return merged
+
+
+def retrieval_metrics(cases, traces):
+    expected = {q['id']: q for q in cases}
+    counts = {'hit1': 0, 'hit3': 0, 'context_evidence': 0, 'N': 0}
+    for trace in traces:
+        q = expected[trace['query_id']]
+        if not q['answerable']:
+            continue
+        counts['N'] += 1
+        ranking = trace.get('original_retrieval', {}).get('results', [])
+        counts['hit1'] += evidence_hit(ranking[:1], q['gold'])
+        counts['hit3'] += evidence_hit(ranking[:3], q['gold'])
+        rows = {r['id']: r for e in trace.get('events', []) if e['event'] == 'search' for r in e['results']}
+        context_rows = [rows[cid] for cid in trace.get('context_ids', []) if cid in rows]
+        counts['context_evidence'] += evidence_hit(merged_chunks(context_rows), q['gold'])
+    return {name: {'n': value, 'N': counts['N'],
+                   'rate': value / counts['N'] if counts['N'] else None}
+            for name, value in counts.items() if name != 'N'}
+
+
+def summarize(cases, traces, reviews=None):
+    summary = {'retrieval': retrieval_metrics(cases, traces),
+               'total_cases': len(cases),
+               'errors': sum(t['status'] == 'error' for t in traces),
+               'median_ms': statistics.median(t['elapsed_ms'] for t in traces),
+               'search_call_distribution': {str(i): sum(t.get('search_calls', 0) == i for t in traces)
+                                            for i in sorted({t.get('search_calls', 0) for t in traces})}}
+    # Không biến việc khớp citation ID thành nhãn citation hỗ trợ nội dung.
+    if reviews is not None:
+        summary['agent'] = aggregate(cases, traces, reviews)
+        by_id = {r['query_id']: r for r in reviews}
+        total = sum((by_id[q['id']]['answer_grade'] / 2 if q['answerable']
+                     else int(by_id[q['id']]['abstention_correct']))
+                    for q in cases if next(t for t in traces if t['query_id'] == q['id'])['status'] != 'error')
+        summary['selection_quality'] = total / len(cases)
+        grades = [by_id[q['id']]['context_grade'] for q in cases if q['answerable'] and q['id'] in by_id]
+        summary['context_review'] = {str(g): grades.count(g) for g in (0, 1, 2)}
+    costs = [c.get('usage', {}).get('cost') for t in traces for c in t.get('model_calls', [])]
+    summary['chat_cost_usd_reported'] = sum(c for c in costs if isinstance(c, (int, float)))
+    summary['chat_calls_without_cost'] = sum(c is None for c in costs)
+    summary['embedding_usage'] = {
+        key: sum(t.get('embedding_usage', {}).get(key, 0) for t in traces)
+        for key in ('api_requests', 'cache_hits', 'prompt_tokens', 'reported_cost_usd', 'responses_without_cost')}
+    return summary
 
 
 def main():

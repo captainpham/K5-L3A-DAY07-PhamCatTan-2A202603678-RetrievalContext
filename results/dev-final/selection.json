@@ -1,0 +1,385 @@
+{
+  "selected_on": "dev",
+  "selected_config": "hybrid_multiturn",
+  "identity": {
+    "namespace": "1a38c6b30f28f685e6bccebcc41b4db551e539805f67df1e07a78b6af274ff9f",
+    "strategy": "A",
+    "embedding": {
+      "provider": "openrouter",
+      "model": "qwen/qwen3-embedding-8b",
+      "requested_dimensions": null,
+      "query_instruction": "Given a question, retrieve relevant passages from scientific papers.",
+      "document_prefix": "",
+      "encoding_format": "float"
+    },
+    "dimensions": 4096,
+    "agent_model": "deepseek/deepseek-v4.1-flash-1017",
+    "code_sha256": "e96a1d270bda0dc3324f2d470445e4ca22b530ec905c8bca6b6a78d2d95b6de8",
+    "benchmark_sha256": "214a6fa1e07d6fe75fefcd40f60ffd1c71180add6311b0e17075ad3ae4af1330",
+    "configs_sha256": "f7685352ea3f828c504eae8162a4ae1bc48b511b774ed651071369863970b4b2",
+    "chunks_sha256": "72e94fde236f5f967d4a8f927c2e80dc06f2f03cc2bc9f8472dca237e3afd145"
+  },
+  "created_at_utc": "2026-11-14T09:31:02.142062+00:00",
+  "criteria": "answer_grade/2 + correct_abstention over all cases desc; context evidence desc; errors asc; median_ms asc; name asc",
+  "dev_run": "C:\\Users\\Benicius\\AI20K_5\\lab\\K5-L3A-DAY07-PhamCatTan-2A202603678-RetrievalContext\\results\\dev-final",
+  "reviews_sha256": "663e1bb50308b67a21027148cad59389c6e279c547c4e41e779a0caf177f6207",
+  "summaries": {
+    "baseline": {
+      "retrieval": {
+        "hit1": {
+          "n": 5,
+          "N": 15,
+          "rate": 0.3333333333333333
+        },
+        "hit3": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        },
+        "context_evidence": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        }
+      },
+      "total_cases": 17,
+      "errors": 0,
+      "median_ms": 3156.5637000021525,
+      "search_call_distribution": {
+        "1": 17
+      },
+      "agent": {
+        "cases": 17,
+        "provider_errors": 0,
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "grounded_answer": {
+          "0": 4,
+          "1": 0,
+          "2": 11,
+          "N": 15,
+          "mean": 1.4666666666666666
+        },
+        "citation_validity": {
+          "n": 16,
+          "N": 16
+        },
+        "answer_citation_coverage": {
+          "n": 11,
+          "N": 11
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 4,
+          "N": 15
+        }
+      },
+      "selection_quality": 0.7647058823529411,
+      "context_review": {
+        "0": 1,
+        "1": 2,
+        "2": 12
+      },
+      "chat_cost_usd_reported": 0.006228948,
+      "chat_calls_without_cost": 0,
+      "embedding_usage": {
+        "api_requests": 0,
+        "cache_hits": 34,
+        "prompt_tokens": 0,
+        "reported_cost_usd": 0.0,
+        "responses_without_cost": 0
+      }
+    },
+    "lexical": {
+      "retrieval": {
+        "hit1": {
+          "n": 4,
+          "N": 15,
+          "rate": 0.26666666666666666
+        },
+        "hit3": {
+          "n": 11,
+          "N": 15,
+          "rate": 0.7333333333333333
+        },
+        "context_evidence": {
+          "n": 11,
+          "N": 15,
+          "rate": 0.7333333333333333
+        }
+      },
+      "total_cases": 17,
+      "errors": 0,
+      "median_ms": 3243.313399987528,
+      "search_call_distribution": {
+        "1": 17
+      },
+      "agent": {
+        "cases": 17,
+        "provider_errors": 0,
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "grounded_answer": {
+          "0": 1,
+          "1": 1,
+          "2": 13,
+          "N": 15,
+          "mean": 1.8
+        },
+        "citation_validity": {
+          "n": 23,
+          "N": 24
+        },
+        "answer_citation_coverage": {
+          "n": 14,
+          "N": 14
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 1,
+          "N": 15
+        }
+      },
+      "selection_quality": 0.9117647058823529,
+      "context_review": {
+        "0": 0,
+        "1": 2,
+        "2": 13
+      },
+      "chat_cost_usd_reported": 0.007329614,
+      "chat_calls_without_cost": 0,
+      "embedding_usage": {
+        "api_requests": 0,
+        "cache_hits": 0,
+        "prompt_tokens": 0,
+        "reported_cost_usd": 0.0,
+        "responses_without_cost": 0
+      }
+    },
+    "hybrid": {
+      "retrieval": {
+        "hit1": {
+          "n": 5,
+          "N": 15,
+          "rate": 0.3333333333333333
+        },
+        "hit3": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        },
+        "context_evidence": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        }
+      },
+      "total_cases": 17,
+      "errors": 0,
+      "median_ms": 3116.388599999482,
+      "search_call_distribution": {
+        "1": 17
+      },
+      "agent": {
+        "cases": 17,
+        "provider_errors": 0,
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "grounded_answer": {
+          "0": 3,
+          "1": 1,
+          "2": 11,
+          "N": 15,
+          "mean": 1.5333333333333334
+        },
+        "citation_validity": {
+          "n": 16,
+          "N": 17
+        },
+        "answer_citation_coverage": {
+          "n": 12,
+          "N": 12
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 3,
+          "N": 15
+        }
+      },
+      "selection_quality": 0.7941176470588235,
+      "context_review": {
+        "0": 1,
+        "1": 3,
+        "2": 11
+      },
+      "chat_cost_usd_reported": 0.00626281824,
+      "chat_calls_without_cost": 0,
+      "embedding_usage": {
+        "api_requests": 0,
+        "cache_hits": 34,
+        "prompt_tokens": 0,
+        "reported_cost_usd": 0.0,
+        "responses_without_cost": 0
+      }
+    },
+    "hybrid_context": {
+      "retrieval": {
+        "hit1": {
+          "n": 5,
+          "N": 15,
+          "rate": 0.3333333333333333
+        },
+        "hit3": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        },
+        "context_evidence": {
+          "n": 11,
+          "N": 15,
+          "rate": 0.7333333333333333
+        }
+      },
+      "total_cases": 17,
+      "errors": 0,
+      "median_ms": 3358.777599991299,
+      "search_call_distribution": {
+        "1": 17
+      },
+      "agent": {
+        "cases": 17,
+        "provider_errors": 0,
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "grounded_answer": {
+          "0": 3,
+          "1": 0,
+          "2": 12,
+          "N": 15,
+          "mean": 1.6
+        },
+        "citation_validity": {
+          "n": 24,
+          "N": 24
+        },
+        "answer_citation_coverage": {
+          "n": 12,
+          "N": 12
+        },
+        "abstention": {
+          "n": 1,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 3,
+          "N": 15
+        }
+      },
+      "selection_quality": 0.7647058823529411,
+      "context_review": {
+        "0": 0,
+        "1": 1,
+        "2": 14
+      },
+      "chat_cost_usd_reported": 0.00874828856,
+      "chat_calls_without_cost": 0,
+      "embedding_usage": {
+        "api_requests": 0,
+        "cache_hits": 34,
+        "prompt_tokens": 0,
+        "reported_cost_usd": 0.0,
+        "responses_without_cost": 0
+      }
+    },
+    "hybrid_multiturn": {
+      "retrieval": {
+        "hit1": {
+          "n": 5,
+          "N": 15,
+          "rate": 0.3333333333333333
+        },
+        "hit3": {
+          "n": 10,
+          "N": 15,
+          "rate": 0.6666666666666666
+        },
+        "context_evidence": {
+          "n": 13,
+          "N": 15,
+          "rate": 0.8666666666666667
+        }
+      },
+      "total_cases": 17,
+      "errors": 0,
+      "median_ms": 4499.373900005594,
+      "search_call_distribution": {
+        "1": 10,
+        "2": 4,
+        "3": 3
+      },
+      "agent": {
+        "cases": 17,
+        "provider_errors": 0,
+        "tool_use": {
+          "n": 17,
+          "N": 17
+        },
+        "grounded_answer": {
+          "0": 0,
+          "1": 1,
+          "2": 14,
+          "N": 15,
+          "mean": 1.9333333333333333
+        },
+        "citation_validity": {
+          "n": 33,
+          "N": 35
+        },
+        "answer_citation_coverage": {
+          "n": 15,
+          "N": 15
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 15
+        }
+      },
+      "selection_quality": 0.9705882352941176,
+      "context_review": {
+        "0": 0,
+        "1": 1,
+        "2": 14
+      },
+      "chat_cost_usd_reported": 0.01063621264,
+      "chat_calls_without_cost": 0,
+      "embedding_usage": {
+        "api_requests": 10,
+        "cache_hits": 34,
+        "prompt_tokens": 340,
+        "reported_cost_usd": 3.4e-06,
+        "responses_without_cost": 0
+      }
+    }
+  }
+}

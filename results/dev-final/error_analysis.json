@@ -1,0 +1,53 @@
+{
+  "reviewer": "Codex hỗ trợ đọc; chưa có người chấm độc lập",
+  "split": "dev",
+  "cases": [
+    {
+      "query_id": "Q08",
+      "problem": "Dense top-3 thiếu đoạn kiểm tra faithfulness.",
+      "baseline_answer_grade": 0,
+      "hypothesis": "Lexical hoặc query tiếng Anh có thể tìm đúng Scope of theory.",
+      "lexical_answer_grade": 2,
+      "hybrid_multiturn_answer_grade": 2,
+      "evidence": "2605.17456v1 trang 15, b1801af9: keep/remove và CAMELYON-16 pixel annotations."
+    },
+    {
+      "query_id": "Q10",
+      "problem": "Query gốc lấy đoạn giới thiệu, thiếu cơ chế marginal gain giảm.",
+      "baseline_answer_grade": 0,
+      "hypothesis": "Thêm ứng viên/context hoặc query diminishing marginal returns.",
+      "hybrid_context_answer_grade": 2,
+      "hybrid_multiturn_answer_grade": 2,
+      "evidence": "Trang 6 d5b030dd và trang 16 4f7b3742/c5da7393."
+    },
+    {
+      "query_id": "Q06",
+      "problem": "Có ρ=0.05 nhưng thiếu validation selection.",
+      "baseline_answer_grade": 0,
+      "hybrid_context_answer_grade": 0,
+      "hybrid_multiturn_answer_grade": 1,
+      "finding": "Tìm lại lấy được Table 16 trên BRACS nhưng vẫn thiếu điều kiện validation."
+    },
+    {
+      "query_id": "Q01,Q07",
+      "config": "hybrid_context",
+      "problem": "Model viết [ID; ID] thay vì từng [ID].",
+      "finding": "Context đủ nhưng citation sai định dạng; giữ điểm 0 của câu trả lời cuối."
+    },
+    {
+      "query_id": "D16",
+      "config": "hybrid_context",
+      "problem": "Nhầm end-to-end 0.18× với peak memory; end-to-end đúng là 0.92×.",
+      "abstention_correct": false,
+      "finding": "Không coi từ chối đúng khi vẫn thêm khẳng định sai."
+    }
+  ],
+  "tradeoff": "Hybrid nhiều lượt tốt hơn trên dev nhưng tốn thêm lượt model, embedding và thời gian. Tăng context không luôn cải thiện.",
+  "limitations": [
+    "Gold excerpt/source/page chưa bao quát mọi bằng chứng tương đương.",
+    "Hai paper, 15 câu có đáp án dev và 5 câu có đáp án test là mẫu nhỏ.",
+    "Nhãn do Codex hỗ trợ, chưa có người chấm độc lập.",
+    "Trích xuất PDF có chỗ mất bố cục bảng, công thức và ngắt từ.",
+    "Có dùng cache; thời gian và chi phí không đại diện cold-start."
+  ]
+}

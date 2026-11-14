@@ -1,0 +1,1032 @@
+[
+  {
+    "config": "baseline",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "N?u ?? S/N/R; ??i chi?u trang 1 v? k?t lu?n trang 9, hai ngu?n h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Tr? l?i ??ng wrapper b? sung, kh?ng thay ki?n tr?c; trang 5 c? ?? b?ng ch?ng cho c?u h?i.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng 1024 chi?u; trang 3 n?u d=1024 v? trang 28 x?c nh?n UNI m?c ??nh.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng text embedding c? ??nh v? ?? b?n nh?m tham s? ???c h?c; trang 6 h? tr? tr?c ti?p.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context trang 6 ?? 1.0?0.4 v? m?c ??ch; model ??a ID trong citations nh?ng qu?n [ID] trong c?u n?n b? t? ch?i.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i d? c?u c? ??p ?n; context ch? c? so s?nh c?ng budget 5%, thi?u ?o?n x?c nh?n c?ch ch?n benchmark ch?nh.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "?? ?b=0.1, ?g=0.5, BRACS validation folds v? c? ??nh qua dataset/backbone; hai chunk trang 7 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q08",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i v? thi?u c?ch ??nh gi? faithfulness; context ch? c? m?nh cu?i c?u ph? nh?n t?i ?u to?n c?c.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "N?u ??ng ??c l?p logic trong Proposition 4; c?c v? d? ??i chi?u th?m trang 17.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q10",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i: c?c ?o?n gi?i thi?u kh?ng gi?i th?ch b?o h?a ho?c m?c t?ng bi?n gi?m c?a patch d? th?a.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? ?=AND, ?=OR, ?=NOT; v? d? query v? h?m t?p ??u c? trong chunk trang 3.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng chi?u bi?u di?n alignment v?i lu?t logic; trang 2 l? b?ng ch?ng t??ng ???ng d? gold t? ??ng tr? trang 5.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? encoder hai l?p, jointly TransMIL, kh?i t?o ng?u nhi?n v? test 99.99%; trang 6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng R l? m?i ch? s? ngo?i 4 v? 7; trang 6 n?u tr?c ti?p.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? 21/25, 84%, threshold 0.5 v? ng? c?nh chuy?n Normal patch; trang 8 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i s? ?? tr? i5-12400; ch? n?u chi ph? t??ng ??i c? trong ngu?n, kh?ng b?a con s? mili gi?y.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "baseline",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i gi? AWS theo th?ng, kh?ng ??a con s? suy ?o?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "?? S/N/R; trang 3,5,9 h? tr? ti?u ch? v? c?c th?nh ph?n ???c m? t?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "??ng wrapper v? ?? c?c ki?u ti?m gate; ??i chi?u trang 3 v? hai chunk trang 5.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng d=1024 xuy?n su?t; chunk trang 3 h? tr? tr?c ti?p.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "?? embedding c? ??nh v? c?c tham s? h?c; trang 5 h? tr? TITAN/prompt v? trang 6 h? tr? tham s?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? 1.0?0.4, bimodal, discrete-like v? recovery khi inference trong chunk trang 6.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i v? thi?u d? li?u/c?ch ch?n; context trang 22 c? ?=0.05 v? sweep nh?ng ch?a c? validation.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q07",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng hai tr?ng s? v? c? ??nh qua dataset; thi?u ?i?u ki?n ch?n tr?n BRACS validation folds trong c?u tr? l?i v? context.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      false
+    ],
+    "reason": "?? ph? nh?n global classifier optimality v? keep/remove plus CAMELYON-16 pixel annotations. Citation 37edf21d ch? l? ?u?i c?u, kh?ng ?? ?? t? h? tr? kh?ng ??nh; hai ngu?n c?n l?i h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng ??c l?p logic, v? d? v? t?nh b? tr?; ??i chi?u Proposition 4 trang 15 v? m?c B.6 trang 17.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng b?o h?a khi anchor ?? ph?, marginal gain th?p v? ?u ti?n b? sung; chunk trang 16 h? tr? d? m?t d?u ch?m cu?i gold.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng ba to?n t?; chunk h?nh trang 4 v?n ghi r? NOT/OR/AND, chunk trang 6 c? v? d? ?4?7?R.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng alignment m?i chi?u v?i m?t rule trong Q; chunk m?c 3.3 trang 5 h? tr? c?ng th?c v? di?n gi?i.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? encoder, TransMIL, kh?i t?o v? 99.99%; chunk trang 6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng t?p ch? s? R; li?t k? 0,1,2,3,5,6,8,9 ph? h?p ??nh ngh?a m?i digit ngo?i 4 v? 7.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? 21/25,84%,threshold0.5; chunk trang 8 h? tr? tr?c ti?p.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "lexical",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i v? kh?ng c? ?o ?? tr? i5-12400; kh?ng ??a s? mili gi?y.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "lexical",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i chi ph? AWS; kh?ng ??a con s? suy ?o?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "?? S/N/R; trang 1 v? 9 h? tr? tr?c ti?p.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng b? sung v? c?c ki?u ti?m gate; trang 3 v? 5 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng 1024 chi?u; trang 3 v? 28 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng embedding c? ??nh, M=8 t? TITAN v? b?n nh?m tham s? h?c; trang 5?6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? 1.0?0.4, bimodal v? ph?c h?i r?i r?c; trang 6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i v? context ch? c? so s?nh c?ng budget, thi?u m?c budget ch?nh v? c?ch ch?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q07",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng tr?ng s? v? gi? c? ??nh nh?ng thi?u ch?n tr?n BRACS validation folds; context ch?a l?y ???c ?o?n ??.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? ph?m vi coverage, kh?ng global optimality v? hai c?ch ??nh gi? faithfulness; chunk trang 15 h? tr? to?n b?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      false
+    ],
+    "reason": "??ng ??c l?p logic. Context trang 15 v? 17 h? tr? ??y ??; citation trang 15 thi?u ?u?i ?i?u ki?n c?a v? d? cu?i n?n ghi h?n ch? citation.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q10",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i v? ch?a c? c? ch? b?o h?a/marginal gain, ch? c? c?c ?o?n gi?i thi?u.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q11",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i do thi?u ??nh ngh?a NOT/AND/OR trong context; ch? c? v? d? query v? m? t? pipeline.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Di?n gi?i ??ng alignment v?i c?c rule; context hai chunk trang 2 ??, d? ch? tr?ch chunk m? t? m?i chi?u l? rule.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? encoder hai l?p, jointly TransMIL, random init, 99.99%; trang 6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng m?i digit ngo?i 4 v? 7; danh s?ch li?t k? t??ng ???ng.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? 21/25,84%,0.5 trong th? nghi?m chuy?n Normal patch; trang 8 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i latency CPU c? th?, s? 5? v? utility 0.989? n?u th?m ??ng ngu?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i USD/th?ng, kh?ng b?a gi?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "C? ?? evidence nh?ng model gh?p nhi?u ID trong c?ng [ID; ID], kh?ng ??ng ??nh d?ng [ID] n?n b? t? ch?i.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "??ng wrapper b? sung v? c?c d?ng gate; ba chunk trang 3?5 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng 1024 chi?u; trang 3 v? 28 h? tr? s? chi?u. Chi ti?t k?ch th??c patch n?m ? chunk l?n c?n trong context.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "?? embedding frozen v? c?c tham s? h?c; rank32 v? ki?n tr?c kh?ng ??i c? ngu?n trang 5?6.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng 1.0?0.4, m?c ??ch discrete-like/recovery v? gi?m m? h? threshold; trang 6 v?17 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [],
+    "reason": "T? ch?i ph?n d? li?u ch?n budget d? c? ?=0.05 v? Table16; ch?a c? t? validation trong context.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context ?? tr?ng s? v? BRACS validation folds, nh?ng model gh?p [ID; ID] khi?n citation kh?ng h?p l? v? b? t? ch?i.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "?? kh?ng t?i ?u to?n c?c v? keep/remove plus CAMELYON-16; chunk trang15 h? tr?, m?nh trang6 ch? ???c tr?ch nguy?n v?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng ??c l?p logic; chunk trang16 b? sung tr??ng h?p gate g?n threshold, c?c ngu?n h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng diminishing returns, c?ng th?c coverage/marginal v? kh?c mean/attention; chunk trang6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "reason": "?? NOT/OR/AND; v? d? concept, s?39 v? alignment c? trong c?c chunk trang4?7. Kh?ng coi th?m ? l? m?t trong ba to?n t? c? b?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "N?u vector alignment v? m?i chi?u l? m?t rule; caption trang4 v? m? t? trang2 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? encoder hai l?p, jointly TransMIL, random init v?99.99%; trang6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng R l? m?i digit ngo?i4 v?7; trang6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??21/25,84%,threshold0.5; trang8 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "C? t? ch?i nh?ng th?m s? sai: cached features end-to-end l?0.92?, kh?ng ph?i0.18?;0.18? l? peak memory trong Table23. Kh?ng ??t y?u c?u kh?ng th?m kh?ng ??nh v? c?n c?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": false
+  },
+  {
+    "config": "hybrid_context",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T? ch?i v? kh?ng c? gi? AWS theo th?ng; kh?ng ??a s? suy ?o?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q01",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      false
+    ],
+    "reason": "??ng ba ti?u ch? S/N/R v? c?c th?nh ph?n. Citation d972ee86 ch? c?n ?u?i ??nh ngh?a Recoverability n?n ch?a t? h? tr? ?? ph?n di?n gi?i ba ??nh ngh?a th?m v?o.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q02",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "??ng wrapper b? sung v? c?c d?ng gate; ??i chi?u trang3,5.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng1024 chi?u; trang3 v?28 h? tr? s? chi?u, k?ch th??cpatch n?m trong context l?n c?n.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q04",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "?? frozen textembedding v? b?n nh?m tham s? h?c; trang5?6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q05",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??1.0?0.4,bimodal,recovery v? gi?m m? h? threshold; trang6,17 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q06",
+    "context_grade": 1,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "T?m l?i l?y ???c?=0.05,Table16 tr?nBRACS v? c?c s? ??ng; ch?a n?i r? ch?n b?ng validation sweep nh? ??p ?n, context ch?a c? ?o?n x?c nh?n validation ? trang7.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 1
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q07",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "???b0.1,?g0.5,BRACSvalidationfolds v? c? ??nh qua dataset/backbone; hai chunk trang7 h? tr?, trang25 x?c nh?n kh?ngretune.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q08",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "reason": "?? ph?m vi coverage v? ki?m tra keep/remove plus CAMELYON-16. Ngu?n trang15,17,20 h? tr?; m?nh37edf21d kh?ng ?? ng? c?nh ?? t? ch?ng minh ph? nh?n t?i ?u to?n c?c.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q09",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "??ng ??c l?p logic, ??c ?? v? d? ? chunk ti?p n?i trang15 v?16; kh?ng c?n suy t? ?o?n b? c?t.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q10",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "reason": "T?m l?i l?y ???c c? c?ng th?c marginal,b?o h?a v? curvature; ba chunk trang6,16 h? tr? c? ch? ?u ti?n b?ng ch?ng b? sung.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q11",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "T?m l?i l?y ???c ??nh ngh?a AND/OR/NOT; ngu?n trang3 v? v? d? trang7 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q12",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "??ng bi?u di?n alignment v?i rule; caption trang4 v? di?n gi?i trang2 l? evidence t??ng ???ng.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q13",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "?? encoderhai l?p,jointlyTransMIL,randominit v?99.99%; trang6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q14",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??ng R l? m?i digit ngo?i4 v?7; trang6 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "Q15",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "??21/25,84%,threshold0.5 v? ?i?u ki?n chuy?npatch; trang8 h? tr?.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "D16",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T?m ??3l??t r?i t? ch?i con s? CPUi5; c?c s? t??ng ??i0.22,0.18,0.92 v?RTX3090/24GB th?m v?o kh?p ngu?n trang25?27.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "D17",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "T?m3l??t r?i t? ch?i gi?AWS; kh?ng b?aUSD/th?ng. Chi ti?t hardware c? ngu?nGCE-MIL, c?u di?n ??t n?n ch? r? paper thay v? n?i chung.",
+    "reviewer": "Codex: ??c c?u tr? l?i, context v? ?o?n ngu?n; kh?ng c? ng??i ch?m ??c l?p",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  }
+]

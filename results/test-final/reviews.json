@@ -1,0 +1,161 @@
+[
+  {
+    "config": "baseline",
+    "query_id": "T01",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ mức giảm 0.078, trung bình trên 9 dataset và 9 backbone; đối chiếu chunk và bản PDF gốc trang 4.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "T02",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ gamma=8.0, delta=0.15 và hai tác dụng; công thức (2) ở trang 6 PDF gốc hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "T03",
+    "context_grade": 2,
+    "citation_support": [
+      true,
+      true
+    ],
+    "reason": "Đúng ABMIL BRACS 0.634→0.703, tăng 6.9 điểm phần trăm; đối chiếu mục 5.2 và Table 2 trang 8.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "T04",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng K=4, silhouette=0.44; đoạn symbolic representation space analysis trang 7 hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "T05",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng so trực tiếp f(x_S) với lambda_q(S), không áp dụng Harsanyi transform; mục 3.2 và công thức tương quan trang 4 hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "baseline",
+    "query_id": "T06",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối mã ClinicalTrials.gov; không suy đoán mã NCT.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "baseline",
+    "query_id": "T07",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối lượng điện kWh; không đưa con số điện năng. Phần hardware trích GCE-MIL, cần phân biệt với thí nghiệm Symb-xMIL.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T01",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ mức giảm 0.078, trung bình trên 9 dataset và 9 backbone; đối chiếu chunk và bản PDF gốc trang 4.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T02",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đủ gamma=8.0, delta=0.15 và hai tác dụng; công thức (2) ở trang 6 PDF gốc hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T03",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng ABMIL BRACS 0.634→0.703, tăng 6.9 điểm phần trăm; đối chiếu mục 5.2 và Table 2 trang 8.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T04",
+    "context_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Đúng K=4, silhouette=0.44; đoạn symbolic representation space analysis trang 7 hỗ trợ.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 2
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T05",
+    "context_grade": 2,
+    "citation_support": [],
+    "reason": "Context đủ và nội dung raw model đúng, nhưng model viết [624b4f38]/[85593f52] thay vì ID đủ 64 ký tự. Code từ chối citation; câu trả lời cuối không có đáp án nên chấm 0.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "answer_grade": 0
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T06",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối mã ClinicalTrials.gov; không suy đoán mã NCT.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  },
+  {
+    "config": "hybrid_multiturn",
+    "query_id": "T07",
+    "context_grade": 0,
+    "citation_support": [],
+    "reason": "Từ chối lượng điện kWh, không bịa con số; phân biệt rõ hardware của GCE-MIL với thông tin huấn luyện Symb-xMIL.",
+    "reviewer": "Codex: đọc câu trả lời, context, chunk và đối chiếu trực quan trang PDF gốc; chưa có người chấm độc lập",
+    "review_date": "2026-11-14",
+    "abstention_correct": true
+  }
+]

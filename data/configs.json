@@ -1,0 +1,7 @@
+{
+  "baseline": {"method": "dense", "top_k": 3, "candidate_k": 20, "budget": 4000, "max_searches": 1, "recent_first": false, "hypothesis": "Dense dùng query gốc trên snapshot A–1000 làm mốc."},
+  "lexical": {"method": "tfidf", "top_k": 3, "candidate_k": 20, "budget": 4000, "max_searches": 1, "recent_first": false, "hypothesis": "Từ khóa giữ được thuật ngữ chính xác nhưng có thể yếu khi hỏi tiếng Việt về tài liệu tiếng Anh."},
+  "hybrid": {"method": "hybrid", "top_k": 3, "candidate_k": 20, "budget": 4000, "max_searches": 1, "recent_first": false, "hypothesis": "RRF kết hợp dense và TF-IDF để bổ sung các ứng viên bị bỏ sót."},
+  "hybrid_context": {"method": "hybrid", "top_k": 6, "candidate_k": 30, "budget": 7500, "max_searches": 1, "recent_first": false, "hypothesis": "Thêm ứng viên và context giúp giữ đủ bằng chứng ngoài top 3; đổi lại tốn thêm token."},
+  "hybrid_multiturn": {"method": "hybrid", "top_k": 6, "candidate_k": 30, "budget": 7500, "max_searches": 3, "recent_first": true, "hypothesis": "Model tìm lại bằng query phù hợp khi còn thiếu bằng chứng; ưu tiên kết quả mới và đo thêm thời gian/chi phí."}
+}
